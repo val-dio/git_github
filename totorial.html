@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard</title>
+  <title>NEW HITS RWANDA</title>
   <style>
     * {
       padding: 0;
@@ -31,6 +31,7 @@
       height: 500px;
       display: flex;
       padding: 10px 0px;
+      flex-wrap: wrap;
     }
     .totorial .main-video {
       width: 70%;
@@ -61,57 +62,88 @@
       width: 100%;
       height: auto;
     }
-    .songs{
+    .all-songs{
       margin-top: 100px;
+      width: 100%;
+      margin-bottom: 100px;
+      box-shadow: 2px 2px 20px 2px black;
+
+    }
+    .songs{
+      margin-top: 50px;
       width: 100%;
       height: 400px auto;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 100px;
+      padding: 50px 0px;
+       
     }
-    .songs h5{
-      color: red;
-      border-bottom: 1px solid black;
+    footer{
+      margin-top: 100px;
+      width: 100%;
+      height: 300px;
+      background-color: azure;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background-color: #fff;
+      box-shadow: 2px 2px 20px 2px black;
+
     }
+    #rights{
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
   </style>
 </head>
 <body>
 
 <header>
-  <h1>GitHub Rwanda</h1>
+  <h1>NEW HITS</h1>
 </header>
-
 <div class="totorial">
+  <!-- main video frame -->
   <div class="main-video">
-    <iframe id="mainVideo" src="https://www.youtube.com/embed/kBHS4TE25t" allowfullscreen></iframe>
+    <iframe id="mainVideo" src="https://www.youtube.com/embed/QRqbFBDtIlo" allowfullscreen></iframe>
   </div>
+  <!-- right side videos -->
   <div class="videos">
     <div class="video-item" onclick="changeVideo('Trw-TMlxiDo')">
       <img src="https://img.youtube.com/vi/Trw-TMlxiDo/0.jpg" alt="Video 1">
     </div>
-    <div class="video-item" onclick="('VIDEO_ID_2')">
-      <img src="https://img.youtube.com/vi/VIDEO_ID_2/0.jpg" alt="Video 2">
+    <div class="video-item" onclick="('IpFX2vq8HKw')">
+      <img src="https://img.youtube.com/vi/IpFX2vq8HKw/0.jpg" alt="Video 2">
     </div>
     <div class="video-item" onclick="changeVideo('7DfKtySRTT0')">
       <img src="https://img.youtube.com/vi/7DfKtySRTT0/0.jpg" alt="Video 3">
     </div>
   </div>
 </div>
+
 <!-- section of songs -->
+ <div class="all-songs">
+
 <div class="songs">
-  <h5>ZEOTRAP NEW SONG</h5>
+
 <iframe width="853" height="480" src="https://www.youtube.com/embed/kBHS4TE25ts" title="BATUREKURE - KAVU MUSIC , ZEOTRAP ,CHAKA FELLA,DONDADA, BODACK &amp; BWIRU MAJAGU [Official video] 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="songs">
-     <h5>YEE FANT NEW SONG</h5>
+
   <iframe width="853" height="480" src="https://www.youtube.com/embed/7DfKtySRTT0" title="STREET GOAT - ZEOTRAP [Official video] 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="songs">
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/Trw-TMlxiDo" title="BUSHALI - Imisaraba 4 (official video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/ruuh-mwhlKQ" title="Yee Fanta - Nyash 🍑" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+</div>
+<!-- footer section -->
+<footer>
+   <p id="rights">&copy;2025[valdio solution Rwanda].Alrights Reserved</p>
+</footer>
 
 <script>
   function changeVideo(videoId) {
