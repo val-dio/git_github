@@ -61,6 +61,14 @@
       width: 100%;
       height: auto;
     }
+    .songs{
+      margin-top: 100px;
+      width: 100%;
+      height: 400px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
@@ -85,7 +93,11 @@
     </div>
   </div>
 </div>
-changeVideo
+<!-- section of songs -->
+<div class="song">
+<iframe width="853" height="480" src="https://www.youtube.com/embed/kBHS4TE25ts" title="BATUREKURE - KAVU MUSIC , ZEOTRAP ,CHAKA FELLA,DONDADA, BODACK &amp; BWIRU MAJAGU [Official video] 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <script>
   function changeVideo(videoId) {
     document.getElementById('mainVideo').src = 'https://www.youtube.com/embed/' + videoId;
