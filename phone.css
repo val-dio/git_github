@@ -1,0 +1,33 @@
+@media (max-width:500px){
+
+   .totorial{
+    margin-top: 10px;
+    margin-bottom: 100px;
+   }
+   .totorial .main-video {
+      width: 100%;
+      height: 350px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+
+
+    }
+
+    .totorial .videos{
+        width: 100%;
+        height: 650px;
+    }
+    .totorial  .main-video iframe, iframe{
+        height: 250px;
+        width: 100%;
+    }
+    footer #rights{
+        font-size: 14px;
+    }
+
+
+}

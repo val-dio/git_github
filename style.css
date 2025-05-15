@@ -5,6 +5,7 @@
     }
     body {
       background-color: aliceblue;
+      
     }
     header {
       position: absolute;
@@ -21,15 +22,17 @@
       margin-top: 100px;
       margin-bottom: 200px;
       width: 100%;
-      height: 500px;
+      height: 500px auto;
       display: flex;
       padding: 10px 0px;
       flex-wrap: wrap;
+      justify-content: center;
     }
     .totorial .main-video {
       width: 70%;
       height: 500px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
     }
@@ -38,6 +41,7 @@
       height: 90%;
       border: none;
     }
+
     .totorial .videos {
       height: 500px;
       width: 30%;
@@ -62,7 +66,7 @@
       box-shadow: 2px 2px 20px 2px black;
 
     }
-    .songs{
+    .all-songs .songs{
       margin-top: 50px;
       width: 100%;
       height: 400px auto;
@@ -91,6 +95,7 @@
     .hg{
       display: flex;
       justify-content: center;
+      align-items: center;
       height: 70px;
       width: 100%;
       background-color: #fff;
@@ -98,10 +103,10 @@
       margin-top: 30px;
     
     }
-    .search-bar {
+  .search-bar {
   margin-top: 90px;
   width: 100%;
-  padding: 15px 20px;
+  padding: 15px 0px;
   background-color: #fff;
   display: flex;
   justify-content: center;
