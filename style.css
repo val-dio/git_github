@@ -8,6 +8,13 @@
     background-color: rgb(223, 238, 252);
       
   }
+    .totorial .videos::-webkit-scrollbar{
+    height: 1px;
+    width: 10px;
+    background: transparent;
+
+  }
+      
     /* head style section */
   header {
     position: fixed;
@@ -65,7 +72,7 @@
   }
 
   .totorial .main-video {
-    width: 70%;
+    width: 65%;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -83,8 +90,24 @@
     height: 500px;
     width: 30%;
     overflow-y: auto;
+    overflow: block;
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+  }
+  .totorial .videos::-webkit-scrollbar{
+    height: 1px;
+     width: 10px;
+
+  }
+  .totorial .videos::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 10px;
+   
+    
+  }
+  .totorial .videos::-webkit-scrollbar-thumb:hover{
+    background: rgb(241, 25, 25);
   }
       
   
