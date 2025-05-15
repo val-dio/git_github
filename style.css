@@ -1,142 +1,149 @@
-    * {
+  * {
       padding: 0;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-    }
-    body {
-      background-color: aliceblue;
+  }
+
+  body {
+    background-color: rgb(223, 238, 252);
       
-    }
-    header {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 80px;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 2px 2px 20px 2px black;
-    }
-    .totorial {
-      margin-top: 100px;
-      margin-bottom: 200px;
-      width: 100%;
-      height: 500px auto;
-      display: flex;
-      padding: 10px 0px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .totorial .main-video {
-      width: 70%;
-      height: 500px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .totorial .main-video iframe {
-      width: 90%;
-      height: 90%;
-      border: none;
-    }
+  }
+    /* head style section */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 20px 2px 30px 5px black;
+  }
+  header .head{
+   position: absolute;
+   left: 0;
+   margin: 0px 30px;
+   color: red;
+  }
+  .search-bar input {
+     width: 500px;
+     padding: 12px 5px;
+     font-size: 1rem;
+     border: 2px solid #ff3c3c;
+     background: transparent;
+     border-radius: 8px;
+     outline: none;
 
-    .totorial .videos {
-      height: 500px;
-      width: 30%;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      
-    }
-    .video-item {
-      margin-bottom: 10px;
-      cursor: pointer;
-      border: 2px solid #fff;
-    }
-    .video-item img {
-      width: 100%;
-      height: auto;
-    }
-    .all-songs{
-      margin-top: 100px;
-      width: 100%;
-      margin-bottom: 100px;
-      box-shadow: 2px 2px 20px 2px black;
+  }
 
-    }
-    .all-songs .songs{
-      margin-top: 50px;
-      width: 100%;
-      height: 400px auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 50px 0px;
-       
-    }
-    footer{
-      margin-top: 100px;
-      width: 100%;
-      height: 300px;
-      background-color: azure;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      background-color: #fff;
-      box-shadow: 2px 2px 20px 2px black;
+  .search-bar button {
+    padding: 14px 20px;
+    background-color: #ff3c3c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+ }
 
-    }
-    #rights{
-      font-size: 20px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .hg{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 70px;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 2px 2px 20px 2px black;
-      margin-top: 30px;
-    
-    }
-  .search-bar {
-  margin-top: 90px;
+ .search-bar button:hover {
+   background-color: #ff5c5c;
+ }
+/* section of video display */
+.totorial {
+  margin-top: 150px;
+  margin-bottom: 200px;
   width: 100%;
-  padding: 15px 0px;
-  background-color: #fff;
+  height: 500px auto;
   display: flex;
+  padding: 10px 0px;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  box-shadow: 2px 2px 20px 2px black;
-}
+  }
 
-.search-bar input {
-  width: 50%;
-  padding: 12px;
-  font-size: 1rem;
-  border: 2px solid #ff3c3c;
-  border-radius: 8px;
-  outline: none;
-}
+  .totorial .main-video {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
 
-.search-bar button {
-  padding: 12px 20px;
-  background-color: #ff3c3c;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease;
-}
+  .totorial .main-video iframe {
+    width: 90%;
+    height: 90%;
+    border: none;
+  }
 
-.search-bar button:hover {
-  background-color: #ff5c5c;
-}
+  .totorial .videos {
+    height: 500px;
+    width: 30%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+      
+  
+  .video-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
+  .video-item img {
+    width: 100%;
+    height: auto;
+  }
+  .all-songs{
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+    box-shadow: 2px 2px 20px 2px black;
+    background-color: #fff;
+
+  }
+  .all-songs .songs{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+     
+  }
+  footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 2px black;
+
+  }
+  #rights{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .hg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 2px black;
+    margin-top: 30px;
+  
+  }
+
+
 .spinner {
   position: fixed;
   top: 50%;
@@ -157,4 +164,4 @@
 }
 
 
-
+  }
