@@ -28,6 +28,17 @@
     footer #rights{
         font-size: 14px;
     }
-
+    header{
+        height: auto;
+        padding: 10px 0px;
+    }
+    header .head{
+         margin-bottom: 60px;
+         margin-left: 100px;
+    }
+    .search-bar input{
+        width: 60%;
+        margin-top: 40px;
+    }
 
 }
