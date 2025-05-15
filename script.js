@@ -27,7 +27,10 @@ function searchYouTube() {
           const videoItem = document.createElement('div');
           videoItem.className = 'video-item';
           videoItem.innerHTML = `<img src="${thumbnail}" alt="${item.snippet.title}">`;
-          videoItem.onclick = () => changeVideo(videoId);
+         videoItem.addEventListener('click', () => {
+  changeVideo(videoId);
+});
+
 
           videosContainer.appendChild(videoItem);
         });
