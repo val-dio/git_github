@@ -45,3 +45,8 @@ function searchYouTube() {
       document.getElementById('loadingSpinner').style.display = 'none';
     });
 }
+
+
+  function changeVideo(videoId) {
+    document.getElementById('mainVideo').src = 'https://www.youtube.com/embed/' + videoId;
+  }
