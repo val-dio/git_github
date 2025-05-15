@@ -4,116 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NEW HITS RWANDA</title>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    body {
-      background-color: aliceblue;
-    }
-    header {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 80px;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 2px 2px 20px 2px black;
-    }
-    .totorial {
-      margin-top: 100px;
-      margin-bottom: 200px;
-      width: 100%;
-      height: 500px;
-      display: flex;
-      padding: 10px 0px;
-      flex-wrap: wrap;
-    }
-    .totorial .main-video {
-      width: 70%;
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .totorial .main-video iframe {
-      width: 90%;
-      height: 90%;
-      border: none;
-    }
-    .totorial .videos {
-      height: 500px;
-      width: 30%;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      
-    }
-    .video-item {
-      margin-bottom: 10px;
-      cursor: pointer;
-      border: 2px solid #fff;
-    }
-    .video-item img {
-      width: 100%;
-      height: auto;
-    }
-    .all-songs{
-      margin-top: 100px;
-      width: 100%;
-      margin-bottom: 100px;
-      box-shadow: 2px 2px 20px 2px black;
-
-    }
-    .songs{
-      margin-top: 50px;
-      width: 100%;
-      height: 400px auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 50px 0px;
-       
-    }
-    footer{
-      margin-top: 100px;
-      width: 100%;
-      height: 300px;
-      background-color: azure;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      background-color: #fff;
-      box-shadow: 2px 2px 20px 2px black;
-
-    }
-    #rights{
-      font-size: 20px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .hg{
-      display: flex;
-      justify-content: center;
-      height: 70px;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 2px 2px 20px 2px black;
-      margin-top: 30px;
-    
-    }
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>NEW HITS</h1>
 </header>
+<div id="loadingSpinner" class="spinner" style="display: none;"></div>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search for a song...">
+  <button onclick="searchYouTube()">Search</button>
+</div>
+
 <div class="totorial">
   <!-- main video frame -->
   <div class="main-video">
@@ -131,7 +35,7 @@
     <div class="video-item" onclick="('IpFX2vq8HKw')">
       <img src="https://img.youtube.com/vi/IpFX2vq8HKw/0.jpg" alt="Video 2">
     </div>
-    
+
     <div class="video-item" onclick="changeVideo('7DfKtySRTT0')">
       <img src="https://img.youtube.com/vi/7DfKtySRTT0/0.jpg" alt="Video 3">
     </div>
@@ -164,11 +68,11 @@
    <p id="rights">&copy;2025[valdio solution Rwanda].Alrights Reserved</p>
 </footer>
 
-<script>
+<script src="script.js">
   function changeVideo(videoId) {
     document.getElementById('mainVideo').src = 'https://www.youtube.com/embed/' + videoId;
   }
 </script>
-
+ 
 </body>
 </html>
