@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Go Tube</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="phone.css">
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body>
   <!-- head of website -->
@@ -16,10 +18,27 @@
   <input type="text" id="searchInput" placeholder="Search  youtube videos here...">
   <button type="submit" onclick="searchYouTube()">Search</button>
 </div>
+<button class="menu-button" onclick="Menu()"><span class="material-symbols-outlined">menu</span></button>
 
 </header>
+<!-- menu right side page -->
+<div class="menu-page">
+  <div class="menus">                                
+     <a href="#"> HOME</a>                                
+     <a href="#"><button onclick="changeTheme()">ChangeTheme</button></a>                                
+     <a href="#">Live chart</a>                                
+     <a href="#">Favourite</a>                                
+     <a href="#">About-us</a>                                
+     <a href="#">feedback & Help</a>  
+     <a href="#">Downlods</a>  
+     <a href="#">Sign in</a>  
+     <a href="#">Awards</a>  
+     </div>                              
+</div>
+
+<!-- spin sectio -->
 <div id="loadingSpinner" class="spinner" style="display: none;"></div>
-  <!-- video display sectio -->
+  <!-- video display section -->
 
 <div class="totorial">
   <!-- main video frame -->
@@ -48,8 +67,9 @@
 </div>
 
 <!-- section of songs -->
+ 
  <div class="all-songs">
-
+<div class="hg hg1"><h1>TRENDING SONGS</h1></div>
 <div class="songs">
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/kBHS4TE25ts" title="BATUREKURE - KAVU MUSIC , ZEOTRAP ,CHAKA FELLA,DONDADA, BODACK &amp; BWIRU MAJAGU [Official video] 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -63,18 +83,14 @@
 <div class="songs">
 <iframe width="853" height="480" src="https://www.youtube.com/embed/ruuh-mwhlKQ" title="Yee Fanta - Nyash 🍑" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<div class="hg"><h1>HIGHLIGHTS</h1></div>
-<div class="songs">
-  <iframe width="853" height="480" src="https://www.youtube.com/embed/8wZVNWVzkAA" title="HIGHLIGHTS | Real Madrid 2-1 RCD Mallorca | LaLiga 2024/25" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
+ </div>
 <!-- footer section -->
 <footer>
-   <p id="rights">&copy;2025[valdio solution Rwanda].Alrights Reserved</p>
+   <p id="rights">Copyrights&copy;2025[valdio solution Rwanda].Alrights Reserved</p>
 </footer>
 
-<script src="script.js">
-</script>
+<script src="script.js"></script>
+ <script src="menu.js"></script>
  
 </body>
 </html>

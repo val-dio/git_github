@@ -1,7 +1,7 @@
 @media (max-width:500px){
 
    .totorial{
-    margin-top: 10px;
+    margin-top: 80px;
     margin-bottom: 100px;
    }
    .totorial .main-video {
@@ -12,8 +12,6 @@
       justify-content: center;
       align-items: center;
       display: flex;
-
-
 
     }
 
@@ -40,5 +38,6 @@
         width: 60%;
         margin-top: 40px;
     }
+
 
 }
