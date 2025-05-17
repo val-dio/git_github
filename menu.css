@@ -82,4 +82,13 @@ header.active{
 #searchInput.active{
     color: #fff;
 }
+/* iniput search videos */
+.searching{
+    color: #000;
+}
+
+.searching.color{
+    color: #fff;
+}
+
 

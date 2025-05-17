@@ -1,7 +1,16 @@
 function Menu(){
 
   let menu = document.querySelector(".menu-page");
+
+  let totorial=document.querySelector(".totorial");
+
+  let allsongs=document.querySelector(".all-songs");
+
   menu.classList.toggle("active");
+
+  totorial.classList.toggle("width");
+
+  allsongs.classList.toggle("width");
   
 }
 
@@ -10,8 +19,16 @@ function Menu(){
   function changeTheme() {
 
   let menu = document.querySelector(".menu-page");
+
   let icon = document.querySelector(".material-symbols-outlined");
+
   let darck = document.querySelector(".all-songs");
+
+
+  let theme = document.querySelector(".searching");
+
+
+  theme.classList.toggle("color");
 
   menu.classList.toggle("black");
 
@@ -22,6 +39,8 @@ function Menu(){
   darck.classList.toggle("blue");
 
   document.header.classList.toggle("active");
+
+  
 
 
   

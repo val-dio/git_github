@@ -70,6 +70,9 @@
   flex-wrap: wrap;
   justify-content: center;
   }
+  .totorial.width{
+    width: 82%;
+  }
 
   .totorial .main-video {
     width: 65%;
@@ -127,6 +130,11 @@
     box-shadow: 2px 2px 20px 2px black;
     background-color: #fff;
 
+  }
+
+  .all-songs.width{
+    
+    width: 82%;
   }
   .all-songs.blue{
     background-color: #222;
